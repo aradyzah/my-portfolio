@@ -1,0 +1,27 @@
+/* src/app.css */
+@import "tailwindcss";
+
+@theme {
+  /* Ini pengganti tailwind.config.ts */
+  --color-brand-pink: #E85A9D;
+  --color-brand-dark: #0D0D0D;
+  --color-brand-yellow: #DFFF00;
+  
+  /* Setting border radius */
+  --radius-4xl: 2rem; 
+}
+
+/* Global Styles */
+body {
+  /* Di v4, variable theme otomatis bisa dipanggil via var() */
+  background-color: var(--color-brand-pink);
+  color: black;
+  
+  /* Utility class Tailwind standar */
+  @apply antialiased;
+}
+
+/* Smooth scrolling */
+html {
+  scroll-behavior: smooth;
+}
