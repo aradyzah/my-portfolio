@@ -1,14 +1,14 @@
 <script lang="ts">
-	import Hero from '$lib/components/sections/Hero.svelte';
-	import FeaturedProjects from '$lib/components/sections/FeaturedProjects.svelte';
+    // 1. IMPORT NAVBAR DI SINI (Wajib!)
+    import Navbar from '$lib/components/shared/Navbar.svelte'; 
+    import Hero from '$lib/components/sections/Hero.svelte';
+    import FeaturedProjects from '$lib/components/sections/FeaturedProjects.svelte';
+    import { projectsData } from '$lib/data/projects';
 </script>
 
-<section id="home" class="bg-brand-pink min-h-screen flex items-center">
-	<Hero />
-</section>
+<Navbar />
 
-<section id="projects" class="bg-brand-dark min-h-screen">
-	<div class="max-w-6xl mx-auto px-6">
-		<FeaturedProjects />
-	</div>
-</section>
+<main class="w-full">
+    <Hero />
+    <FeaturedProjects projects={projectsData} />
+</main>
