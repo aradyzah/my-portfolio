@@ -1,11 +1,13 @@
 /* src/app.css */
 @import "tailwindcss";
 
+/*#e978c2*/
+
 @theme {
   /* Ini pengganti tailwind.config.ts */
-  --color-brand-pink: #E85A9D;
+  --color-brand-pink: #FADBE9;
   --color-brand-dark: #0D0D0D;
-  --color-brand-yellow: #DFFF00;
+  --color-brand-yellow: #f4cf86;
   
   /* Setting border radius */
   --radius-4xl: 2rem; 
@@ -21,7 +23,12 @@ body {
   @apply antialiased;
 }
 
-/* Smooth scrolling */
 html {
-  scroll-behavior: smooth;
+  height: 100%;
+  width: 100%;
+}
+
+*{
+    /* Matikan antialiasing berat saat animasi berjalan */
+    -webkit-font-smoothing: auto; 
 }
