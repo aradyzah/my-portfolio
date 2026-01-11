@@ -3,7 +3,8 @@
     import { locales, localizeHref } from '$lib/paraglide/runtime';
     import '../app.css'; 
     import AuroraBackground from '$lib/components/shared/AuroraBackground.svelte';
-    import bgMusic from '$lib/assets/bg-music.mp3';
+    import bgMusic from '$lib/assets/musics/bg-music.mp3';
+    import Footer from '$lib/components/shared/Footer.svelte';
 
     // IMPORT SEMUA STORE
     import { isPlaying, currentTime, duration } from '$lib/stores/audioStore';
@@ -39,6 +40,8 @@
 ></audio>
 
 {@render children()}
+
+<Footer />
 
 <div style="display:none">
     {#each locales as locale}
