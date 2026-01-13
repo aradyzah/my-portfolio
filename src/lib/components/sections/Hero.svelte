@@ -3,7 +3,7 @@
     import { isPlaying, currentTime, duration, formatTime } from '$lib/stores/audioStore';
     import { spring } from 'svelte/motion';
     
-    // IMPORT MARQUEE
+    // IMPORT MARQUEE (Tetap Ada)
     import TechMarquee from '$lib/components/shared/TechMarquee.svelte';
 
     let isFlipped = false;
@@ -47,12 +47,14 @@
 
 <section id="home" class="w-full flex flex-col items-center justify-center pt-24 pb-10 px-4 mt-8">
 
-    <div class="transform-gpu will-change-transform w-[95%] max-w-[93rem] 
-                bg-gradient-to-br from-white/40 to-white/5 
-                border-[5px] border-white/30 
-                shadow-glass rounded-[3rem] 
-                flex flex-col lg:flex-row items-center justify-center gap-12 md:gap-24 
-                px-8 py-20 md:px-12 md:py-20 relative overflow-hidden">
+    <div 
+        class="transform-gpu will-change-transform w-[95%] max-w-[93rem] 
+               bg-gradient-to-br from-white/40 to-white/5 
+               border-[5px] border-white/30 
+               shadow-glass rounded-[3rem] 
+               flex flex-col lg:flex-row items-center justify-center gap-12 md:gap-24 
+               px-8 py-20 md:px-12 md:py-20 relative overflow-hidden"
+    >
 
         <div 
             class="relative group flex-shrink-0 z-20 w-[300px] cursor-pointer [perspective:1000px]"
