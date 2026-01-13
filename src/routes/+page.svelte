@@ -4,6 +4,7 @@
     import Hero from '$lib/components/sections/Hero.svelte';
     import FeaturedProjects from '$lib/components/sections/FeaturedProjects.svelte';
     import { projectsData } from '$lib/data/projects';
+    import WorkPhilosophy from '$lib/components/sections/WorkPhilosophy.svelte';
 </script>
 
 <Navbar />
@@ -12,3 +13,5 @@
     <Hero />
     <FeaturedProjects projects={projectsData} />
 </main>
+
+<WorkPhilosophy />
